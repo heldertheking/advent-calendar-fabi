@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta about="Advent Calendar for my beautiful Girlfriend">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Advent Calendar</title>
+</head>
+<body>
+<header>
+    <h1>Advent Calendar</h1>
+    <span>for my beautiful Girlfriend</span>
+</header>
+<main>
+    <div class="calendar">
+        <!--- Day 1 --->
+        <div class="day" data-day="1">
+            <div class="door">1</div>
+            <dialog>
+                <div>
+                    <h2>Day 1</h2>
+                    <p>I made you this cool Advent Calendar and gifted you your favorite chocolate bar.😘️</p>
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 2 --->
+        <div class="day" data-day="2">
+            <div class="door">2</div>
+            <dialog>
+                <div>
+                    <h2>Day 2</h2>
+                    <p>Here are three reasons why I love you:❤️</p>
+                    <ul>
+                        <li>You are always there for me</li>
+                        <li>You are cute</li>
+                        <li>No one has ever cared so much for me</li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 3 --->
+        <div class="day" data-day="3">
+            <div class="door">3</div>
+            <dialog>
+                <div>
+                    <h2>Day 3</h2>
+                    <p>Roses are red, violets are blue, sugar is sweet, and so are you.🌹</p>
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 4 --->
+        <div class="day" data-day="4">
+            <div class="door">4</div>
+            <dialog>
+                <div>
+                    <h2>Day 4</h2>
+                    <p>🔊🎶I made you a small playlist with songs that remind me of you.🎵</p>
+                    <a href="" target="_blank">Click here to tune in!</a>
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 5 --->
+        <div class="day" data-day="5">
+            <div class="door">5</div>
+            <dialog>
+                <div>
+                    <h2>Day 5</h2>
+                    <p id="code-poem">
+                        You light up my world with your smile.<br>
+                        Only you can make my heart race with a glance.<br>
+                        Always there, you lift me up when I’m down.<br>
+                        Radiant and kind, you inspire me every day.<br>
+                        Every moment with you feels magical.<br>
+                        Truly, you are my greatest adventure.<br>
+                        Happiness is wherever you are.<br>
+                        Every day, I’m grateful for you.<br>
+                        Being with you is my favorite place.<br>
+                        Every laugh we share is a treasure.<br>
+                        Sweetness and love, that’s what you bring.<br>
+                        Together, we make the perfect team.<br>
+                    </p>
+                    <button onclick="highlightCodePoem()">Little Surprise</button>
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 6 --->
+        <div class="day" data-day="6">
+            <div class="door">6</div>
+            <dialog>
+                <div>
+                    <h2>Day 6</h2>
+                    <p>I want to gift you a little surprise</p>
+                    <img src="./assets/day-6-coupon.svg" alt="Coupon">
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 7 --->
+        <div class="day" data-day="7">
+            <div class="door">7</div>
+            <dialog>
+                <div>
+                    <h2>Day 7</h2>
+                    <p>I remember the moment that I first felt like you were the only one I wanted. It was late, I was
+                        tired, you were tired, we tried making a fire, but we didn't get there. After a bit we both
+                        cried in
+                        each other's arms... you even let me cry on your lap. That was one of the moments were I knew
+                        you
+                        weren't just another person in my life</p>
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 8 --->
+        <div class="day" data-day="8">
+            <div class="door">8</div>
+            <dialog>
+                <div>
+                    <h2>Day 8</h2>
+                    <p>I found a picture that shows your beautiful smile.😍</p>
+                    <img src="./assets/day-8-image.jpg" alt="Smile">
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 9 --->
+        <div class="day" data-day="9">
+            <div class="door">9</div>
+            <dialog>
+                <div>
+                    <h2>Day 9</h2>
+                    <p>I was running out of ideas so... a poem... again! Yeah!</p>
+                    <p>
+                        I look in your eyes and find inner peace. <br>
+                        When I'm with you, all worries cease. <br>
+                        Your smile is my light, my guide, my hope. <br>
+                        When I'm with you, I feel at home. <br>
+                        and let this poem be a sign <br>
+                        that I am not really able to rhyme. <br>
+                        I hope you enjoy it. That all from me. <br>
+                        Thank you for being there for me❤️
+                    </p>
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 10 --->
+        <div class="day" data-day="10">
+            <div class="door">10</div>
+            <dialog>
+                <div>
+                    <h2>Day 10</h2>
+                    <p>Surprise, well, the whole calendar is a surprise, but still... Surprise!!!!</p>
+                    <p>I have made you a cute little card which I will bring you today.</p>
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 11 --->
+        <div class="day" data-day="11">
+            <div class="door">11</div>
+            <dialog>
+                <div>
+                    <h2>Day 11</h2>
+                    <p>It's our 9-month anniversary</p>
+                    <p>This door is a Coupon for a free back massage.</p>
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 12 --->
+        <div class="day" data-day="12">
+            <div class="door">12</div>
+            <dialog>
+                <div>
+                    <h2>Day 12</h2>
+                    <p>This was the night I fell in love again, this time with your inner child</p>
+                    <img src="./assets/day-12-carrera-track.jpg" alt="Carrera Track">
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 13 --->
+        <div class="day" data-day="13">
+            <div class="door">13</div>
+            <dialog>
+                <div>
+                    <h2>Day 13</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 14 --->
+        <div class="day" data-day="14">
+            <div class="door">14</div>
+            <dialog>
+                <div>
+                    <h2>Day 14</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 15 --->
+        <div class="day" data-day="15">
+            <div class="door">15</div>
+            <dialog>
+                <div>
+                    <h2>Day 15</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 16 --->
+        <div class="day" data-day="16">
+            <div class="door">16</div>
+            <dialog>
+                <div>
+                    <h2>Day 16</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 17 --->
+        <div class="day" data-day="17">
+            <div class="door">17</div>
+            <dialog>
+                <div>
+                    <h2>Day 17</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 18 --->
+        <div class="day" data-day="18">
+            <div class="door">18</div>
+            <dialog>
+                <div>
+                    <h2>Day 18</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 19 --->
+        <div class="day" data-day="19">
+            <div class="door">19</div>
+            <dialog>
+                <div>
+                    <h2>Day 19</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 20 --->
+        <div class="day" data-day="20">
+            <div class="door">20</div>
+            <dialog>
+                <div>
+                    <h2>Day 20</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 21 --->
+        <div class="day" data-day="21">
+            <div class="door">21</div>
+            <dialog>
+                <div>
+                    <h2>Day 21</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 22 --->
+        <div class="day" data-day="22">
+            <div class="door">22</div>
+            <dialog>
+                <div>
+                    <h2>Day 22</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 23 --->
+        <div class="day" data-day="23">
+            <div class="door">23</div>
+            <dialog>
+                <div>
+                    <h2>Day 23</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+        <!--- Day 24 --->
+        <div class="day" data-day="24">
+            <div class="door">24</div>
+            <dialog>
+                <div>
+                    <h2>Day 24</h2>
+                    <!--- TODO: Add gift --->
+                </div>
+            </dialog>
+        </div>
+    </div>
+</main>
+<footer>
+    <span>&copy; Hélder Oliveira</span>
+</footer>
+</body>
+<script>
+    (function () {
+        const GRADIENT = 'linear-gradient(135deg, #0f4d1e, #1a7a36)';
+        const calendar = document.querySelector('.calendar');
+        if (!calendar) return;
+
+        function applyGradientSlices() {
+            const calRect = calendar.getBoundingClientRect();
+            const doors = calendar.querySelectorAll('.door');
+
+            doors.forEach(door => {
+                const dRect = door.getBoundingClientRect();
+
+                // offset of the door relative to the calendar (in px)
+                const offsetX = Math.round(dRect.left - calRect.left);
+                const offsetY = Math.round(dRect.top - calRect.top);
+
+                // set the background to look like a single big gradient positioned behind the door
+                door.style.backgroundImage = GRADIENT;
+                // Make the gradient image the same size as the whole calendar (so slices align)
+                door.style.backgroundSize = `${Math.round(calRect.width)}px ${Math.round(calRect.height)}px`;
+                // shift the background so this door shows the correct slice
+                door.style.backgroundPosition = `-${offsetX}px -${offsetY}px`;
+                door.style.backgroundRepeat = 'no-repeat';
+            });
+        }
+
+        // Apply immediately
+        applyGradientSlices();
+
+        // Re-apply on resize (throttle)
+        let t;
+        window.addEventListener('resize', () => {
+            clearTimeout(t);
+            t = setTimeout(applyGradientSlices, 100);
+        });
+
+        // If the layout changes dynamically (fonts/images loaded), re-run after it loads
+        window.addEventListener('load', applyGradientSlices);
+    })();
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const days = document.querySelectorAll('.day');
+
+        // 1. Apply clickable class to all available days
+        const date = new Date();
+        if (date.getMonth() !== 11) return; // only apply in December
+
+        // const today = date.getDate(); // today's date (1-31)
+        const today = 24;
+        days.forEach(day => {
+            if (parseInt(day.attributes['data-day'].value) > today) return;
+            const door = day.children[0]; // Get Door
+            const dialog = day.children[1]; // Get Dialog
+            door.classList.add('clickable'); // apply "clickable" class to the door
+            door.addEventListener('click', ($event) => {
+                $event.target.classList.add('open');
+                dialog.showModal(); // open dialog
+                updateStorage(day.attributes['data-day'].value)
+            });
+        })
+
+        // 2. Check if the user has already completed the calendar
+        const DaysObject = JSON.parse(localStorage.getItem("DAYS")) || {};
+        days.forEach(day => {
+            if (DaysObject[day.attributes['data-day'].value]) day.children[0].classList.add('open');
+        })
+    })
+
+    function highlightCodePoem() {
+        const poem = document.querySelector('#code-poem');
+        if (poem.innerHTML.includes('<mark>')) return;
+        poem.innerHTML = poem.innerHTML
+            .split('<br>')
+            .map(line => {
+                line = line.trim();
+                if (!line) return '';
+                return `<mark>${line.substring(0, 1)}</mark>${line.substring(1)}`;
+            })
+            .join('<br>');
+    }
+
+    function updateStorage(day) {
+        let DaysObject = JSON.parse(localStorage.getItem("DAYS")) || {}
+
+        DaysObject[day] = true;
+        localStorage.setItem("DAYS", JSON.stringify(DaysObject))
+    }
+
+    window.removeOpen = () => {
+        localStorage.clear();
+        const days = document.querySelectorAll('.day');
+        days.forEach(day => day.children[0].classList.remove('open'));
+        return "Local Storage cleared!";
+    }
+</script>
+</html>
