@@ -179,11 +179,6 @@ footer {
     to { font-size: 2rem; }
 }
 
-/*TODO: Remove temporary blur*/
-img {
-    filter: blur(80px);
-}
-
 dialog {
     height: 70vh;
     width: 70vw;

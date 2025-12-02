@@ -351,8 +351,7 @@
         const date = new Date();
         if (date.getMonth() !== 11) return; // only apply in December
 
-        // const today = date.getDate(); // today's date (1-31)
-        const today = 24;
+        const today = date.getDate(); // today's date (1-31)
         days.forEach(day => {
             if (parseInt(day.attributes['data-day'].value) > today) return;
             const door = day.children[0]; // Get Door
