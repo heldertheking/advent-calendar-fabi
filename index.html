@@ -59,7 +59,7 @@
                 <div>
                     <h2>Day 4</h2>
                     <p>🔊🎶I made you a small playlist with songs that remind me of you.🎵</p>
-                    <a href="" target="_blank">Click here to tune in!</a>
+                    <a href="https://music.youtube.com/playlist?list=PLWc3sUI6Dqm-ZZw96F0NH9McRxT80XV2K&si=erSWbdYaykfN_k2u" target="_blank">Click here to tune in!</a>
                 </div>
             </dialog>
         </div>
@@ -193,7 +193,12 @@
             <dialog>
                 <div>
                     <h2>Day 14</h2>
-                    <!--- TODO: Add gift --->
+                    <p>
+                        I will bring you a flower tonight. In the meantime, here is a digital version of the flower.
+                    </p>
+                    <div id="flower-art">
+                        <!--- JS animated flower--->
+                    </div>
                 </div>
             </dialog>
         </div>
@@ -351,7 +356,8 @@
         const date = new Date();
         if (date.getMonth() !== 11) return; // only apply in December
 
-        const today = date.getDate(); // today's date (1-31)
+        let today = date.getDate(); // today's date (1-31)
+        if (isDevMode()) today = 31; // In dev mode, unlock all days
         days.forEach(day => {
             if (parseInt(day.attributes['data-day'].value) > today) return;
             const door = day.children[0]; // Get Door
@@ -396,6 +402,16 @@
         const days = document.querySelectorAll('.day');
         days.forEach(day => day.children[0].classList.remove('open'));
         return "Local Storage cleared!";
+    }
+
+    window.devMode = () => {
+        sessionStorage.setItem("DEV_MODE", (!isDevMode()).toString())
+        location.reload();
+        return "Dev Mode: " + isDevMode();
+    }
+
+    function isDevMode() {
+        return sessionStorage.getItem("DEV_MODE") === "true";
     }
 </script>
 </html>
