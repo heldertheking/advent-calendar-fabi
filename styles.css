@@ -153,6 +153,61 @@ footer {
     }
 }
 
+.deco {
+    max-width: 2.5rem;
+    aspect-ratio: 1/1;
+    z-index: 101;
+
+    &[data-deco-idx="1"] {
+        grid-area: 1 / 2;
+        transform: translate(-30%, -70%) rotate(-30deg); /* Offset inside a grid cell */
+    }
+    &[data-deco-idx="2"] {
+        grid-area: 1 / 4;
+        transform: translate(50%, 30%); /* Offset inside a grid cell */
+    }
+    &[data-deco-idx="3"] {
+        grid-area: 2 / 8;
+        transform: translate(-25%, 40%); /* Offset inside a grid cell */
+    }
+    &[data-deco-idx="4"] {
+        grid-area: 3 / 11;
+        transform: translate(80%, 50%);
+    }
+    &[data-deco-idx="5"] {
+        grid-area: 6 / 8;
+        transform: translate(20%, 30%);
+    }
+    &[data-deco-idx="6"] {
+        grid-area: 4 / 5;
+        transform: translate(35%, 80%);
+    }
+    &[data-deco-idx="7"] {
+        grid-area: 6 / 7;
+        transform: translate(0%, 0%);
+    }
+    &[data-deco-idx="8"] {
+        grid-area: 4 / 10;
+        transform: translate(0%, 90%);
+    }
+    &[data-deco-idx="9"] {
+        grid-area: 5 / 2;
+        transform: translate(50%, 20%);
+    }
+    &[data-deco-idx="10"] {
+        grid-area: 8 / 5;
+        transform: translate(70%, 18%);
+    }
+    &[data-deco-idx="11"] {
+        grid-area: 6 / 4;
+        transform: translate(0%, -50%);
+    }
+    &[data-deco-idx="12"] {
+        grid-area: 3 / 3;
+        transform: translate(50%, 50%);
+    }
+}
+
 .door {
     aspect-ratio: inherit;
     width: 100%;
