@@ -286,7 +286,7 @@ dialog {
     background: transparent; /* fallback background for gaps */
 }
 
-.door, header, footer {
+.door, header, footer, .deco {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
