@@ -265,39 +265,41 @@
                 <div>
                     <h2>Day 19</h2>
                     <p>Reasons why I love you</p>
-                    <div style="height: 100%; overflow: scroll;">
-- your smile
-- your eyes
-- your love
-- your voice
-- your hair
-- your perfections
-- your imperfections
-- your body
-- your trust
-- your heart 
-- your friendship
-- your way of showing love
-- how you are friedly to everyone
-- how you care like a mother
-- how you take care of me
-- how you feel safe around me
-- how you love me after everything I do
-- how you make me feel like im worth smt
-- how you just make me whole
-- how you complete my soul
-- how you bring me closer to go
-- how you trust me with so many things
-- how you allow me to be the protector
-- how you make the best out of any situation
-- how you love me with your whole heart
-- how I can always fall into your arms when things go wrong
-- how you trust me no matter how hard it gets
-- how you make my day with a simple text
-- how you care for me
-- how you worry about me
-- how you enjoy riding on my bike
-- how strong you are
+                    <div style="height: 100%; overflow: scroll; text-align: left;">
+                        <ul>
+                            <li>your smile</li>
+                            <li>your eyes</li>
+                            <li>your love</li>
+                            <li>your voice</li>
+                            <li>your hair</li>
+                            <li>your perfections</li>
+                            <li>your imperfections</li>
+                            <li>your body</li>
+                            <li>your trust</li>
+                            <li>your heart</li>
+                            <li>your friendship</li>
+                            <li>your way of showing love</li>
+                            <li>how you are friendly to everyone</li>
+                            <li>how you care like a mother</li>
+                            <li>how you take care of me</li>
+                            <li>how you feel safe around me</li>
+                            <li>how you love me after everything I do</li>
+                            <li>how you make me feel like I'm worth smt</li>
+                            <li>how you make me whole</li>
+                            <li>how you complete my soul</li>
+                            <li>how you bring me closer to go</li>
+                            <li>how you trust me with so many things</li>
+                            <li>how you allow me to be the protector</li>
+                            <li>how you make the best out of any situation</li>
+                            <li>how you love me with your whole heart</li>
+                            <li>how I can always fall into your arms when things go wrong</li>
+                            <li>how you trust me no matter how hard it gets</li>
+                            <li>how you make my day with a simple text</li>
+                            <li>how you care for me</li>
+                            <li>how you worry about me</li>
+                            <li>how you enjoy riding on my bike</li>
+                            <li>how strong you are</li>
+                        </ul>
                     </div>
                 </div>
             </dialog>
@@ -309,51 +311,7 @@
                 <div>
                     <h2>Day 20</h2>
                     <div style="height: 100%; overflow: scroll;">
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
-                        I love you❤️
+                        <ul id="love-list"></ul>
                     </div>
                 </div>
             </dialog>
@@ -375,7 +333,7 @@
             <dialog>
                 <div>
                     <h2>Day 22</h2>
-                    <!--- TODO: Add gift --->
+                    <p> I just wanted to leave a thank-you note for being there for me and never giving up on us, you are truly the best Girlfriend I could’ve ever wished for❤️</p>
                 </div>
             </dialog>
         </div>
@@ -385,7 +343,11 @@
             <dialog>
                 <div>
                     <h2>Day 23</h2>
-                    <!--- TODO: Add gift --->
+                    <p>Well... Im just gonna leave you with this</p>
+                    <div style="display: flex; flex-direction: row;">
+                        <button onclick="cat()">ps ps ps...</button>
+                        <button onclick="shoo()">shoo!</button>
+                    </div>
                 </div>
             </dialog>
         </div>
@@ -396,6 +358,7 @@
                 <div>
                     <h2>Day 24</h2>
                     <!--- TODO: Add gift --->
+                    <p>Coming Tomorrow, sorry for the cliffhanger</p>
                 </div>
             </dialog>
         </div>
@@ -472,6 +435,14 @@
         days.forEach(day => {
             if (DaysObject[day.attributes['data-day'].value]) day.children[0].classList.add('open');
         })
+
+        // Dynamically generate 45 "I love you❤️" lines as list items
+        const loveList = document.getElementById('love-list');
+        for (let i = 0; i < 45; i++) {
+            const li = document.createElement('li');
+            li.textContent = 'I love you❤️';
+            loveList.appendChild(li);
+        }
     })
 
     function highlightCodePoem() {
@@ -514,4 +485,5 @@
 <script src="./js/snow.js"></script>
 <script src="./js/custom_cursor.js"></script>
 <script src="./js/hearts.js"></script>
+<script src="catjs/cat.js"></script>
 </html>

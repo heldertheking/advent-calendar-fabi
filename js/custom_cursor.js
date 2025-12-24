@@ -27,6 +27,10 @@ function addCursorStyling() {
             .clickable {
                 cursor: url('./assets/cursor/select.cur'), auto;
             }
+            
+            .catjs {
+                cursor: url('./assets/cursor/petpet-transparent.gif'), auto;
+            }
         `;
     document.head.appendChild(cursorStyle);
 }
